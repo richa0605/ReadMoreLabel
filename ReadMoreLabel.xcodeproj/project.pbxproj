@@ -86,6 +86,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A158969F2CF5726300BFB3E4 /* AppBase */ = {
+			isa = PBXGroup;
+			children = (
+				BAAA54502CC152D000C91A5C /* AppDelegate.swift */,
+				BAAA54522CC152D000C91A5C /* SceneDelegate.swift */,
+			);
+			path = AppBase;
+			sourceTree = "<group>";
+		};
+		A15896A02CF5727B00BFB3E4 /* UILabel+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BAAA54802CC1535E00C91A5C /* UILabelCode.swift */,
+			);
+			path = "UILabel+Extension";
+			sourceTree = "<group>";
+		};
+		A15896A12CF572AC00BFB3E4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BAAA54542CC152D000C91A5C /* AttributedTextVC.swift */,
+				BAB612502CC8DE99007686ED /* NormalTextVC.swift */,
+				BAB612562CC8EEAD007686ED /* TblVwVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A15896A22CF572C400BFB3E4 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				BAB612522CC8EC2D007686ED /* TableViewCell.swift */,
+				BAB612532CC8EC2D007686ED /* TableViewCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		A15896A32CF572D700BFB3E4 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A15896A52CF572F100BFB3E4 /* LaunchScreen */,
+				A15896A42CF572E600BFB3E4 /* Main */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		A15896A42CF572E600BFB3E4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BAAA54562CC152D000C91A5C /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A15896A52CF572F100BFB3E4 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BAAA545B2CC152D200C91A5C /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		A15896A62CF5730300BFB3E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BAAA54592CC152D200C91A5C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BAAA54442CC152D000C91A5C = {
 			isa = PBXGroup;
 			children = (
@@ -109,17 +178,12 @@
 		BAAA544F2CC152D000C91A5C /* ReadMoreLabel */ = {
 			isa = PBXGroup;
 			children = (
-				BAAA54502CC152D000C91A5C /* AppDelegate.swift */,
-				BAAA54522CC152D000C91A5C /* SceneDelegate.swift */,
-				BAAA54542CC152D000C91A5C /* AttributedTextVC.swift */,
-				BAB612502CC8DE99007686ED /* NormalTextVC.swift */,
-				BAB612562CC8EEAD007686ED /* TblVwVC.swift */,
-				BAAA54802CC1535E00C91A5C /* UILabelCode.swift */,
-				BAB612522CC8EC2D007686ED /* TableViewCell.swift */,
-				BAB612532CC8EC2D007686ED /* TableViewCell.xib */,
-				BAAA54562CC152D000C91A5C /* Main.storyboard */,
-				BAAA54592CC152D200C91A5C /* Assets.xcassets */,
-				BAAA545B2CC152D200C91A5C /* LaunchScreen.storyboard */,
+				A15896A02CF5727B00BFB3E4 /* UILabel+Extension */,
+				A158969F2CF5726300BFB3E4 /* AppBase */,
+				A15896A12CF572AC00BFB3E4 /* ViewControllers */,
+				A15896A22CF572C400BFB3E4 /* XIB */,
+				A15896A62CF5730300BFB3E4 /* Resources */,
+				A15896A32CF572D700BFB3E4 /* StoryBoards */,
 				BAAA545E2CC152D200C91A5C /* Info.plist */,
 			);
 			path = ReadMoreLabel;
@@ -458,6 +522,7 @@
 		BAAA54782CC152D200C91A5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_OWNER = "@richa0605";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +535,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INSTALL_OWNER = $richa0605;
 				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,6 +553,7 @@
 		BAAA54792CC152D200C91A5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_OWNER = "@richa0605";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +566,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INSTALL_OWNER = $richa0605;
 				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
