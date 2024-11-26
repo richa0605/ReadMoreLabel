@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Khc-zh-r04">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Attributed Text VC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AttributedTextVC" id="BYZ-38-t0r" customClass="AttributedTextVC" customModule="ReadMoreLabel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hie-we-MNv">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pim-oE-B92">
+                                        <rect key="frame" x="20" y="50" width="353" height="111"/>
+                                        <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</string>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pim-oE-B92" firstAttribute="centerX" secondItem="Hie-we-MNv" secondAttribute="centerX" id="UGC-i8-FTT"/>
+                                    <constraint firstAttribute="trailing" secondItem="pim-oE-B92" secondAttribute="trailing" constant="20" id="UbI-Dd-SGf"/>
+                                    <constraint firstItem="pim-oE-B92" firstAttribute="leading" secondItem="Hie-we-MNv" secondAttribute="leading" constant="20" id="hub-MC-uvr"/>
+                                    <constraint firstAttribute="bottom" secondItem="pim-oE-B92" secondAttribute="bottom" constant="20" id="lYm-vx-Qg0"/>
+                                    <constraint firstItem="pim-oE-B92" firstAttribute="top" secondItem="Hie-we-MNv" secondAttribute="top" constant="50" id="qpL-SR-NFN"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hie-we-MNv" secondAttribute="bottom" id="L86-qw-sMx"/>
+                            <constraint firstItem="Hie-we-MNv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UGB-Be-rVx"/>
+                            <constraint firstItem="Hie-we-MNv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bUY-Tx-2hq"/>
+                            <constraint firstItem="Hie-we-MNv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vTV-Jn-ObH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Attributed Text VC" id="MZs-Iq-WDJ"/>
+                    <connections>
+                        <outlet property="lblReadMore" destination="pim-oE-B92" id="Dei-1F-lVK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="A0g-N5-xxT">
+            <objects>
+                <viewController id="3iR-zR-DL0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DaX-bf-wvq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wh4-Hm-4TY">
+                                <rect key="frame" x="30" y="341" width="333" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhG-NG-kon">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fWJ-bq-aUO"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Normal Text"/>
+                                        <connections>
+                                            <segue destination="P9G-gz-kuq" kind="push" id="0se-UB-9Xw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaZ-hx-aY4">
+                                        <rect key="frame" x="0.0" y="60" width="333" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wgr-Tk-oxw"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Attributed Text"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="push" id="6Az-Sf-uma"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTc-qK-zWA">
+                                        <rect key="frame" x="0.0" y="120" width="333" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8xl-7d-oDc"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="TableView Cell"/>
+                                        <connections>
+                                            <segue destination="4yd-x4-EXF" kind="push" id="4PF-8W-BqM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H36-le-qMp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wh4-Hm-4TY" firstAttribute="centerY" secondItem="DaX-bf-wvq" secondAttribute="centerY" id="hlB-0h-dpN"/>
+                            <constraint firstItem="H36-le-qMp" firstAttribute="trailing" secondItem="wh4-Hm-4TY" secondAttribute="trailing" constant="30" id="qtp-Ht-1qb"/>
+                            <constraint firstItem="wh4-Hm-4TY" firstAttribute="leading" secondItem="H36-le-qMp" secondAttribute="leading" constant="30" id="ymT-T3-fMy"/>
+                            <constraint firstItem="wh4-Hm-4TY" firstAttribute="centerX" secondItem="DaX-bf-wvq" secondAttribute="centerX" id="zFX-39-L5u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="epX-V4-4Ws"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tp0-UX-VD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2oD-Vr-22g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Khc-zh-r04" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0vO-ql-cwQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3iR-zR-DL0" kind="relationship" relationship="rootViewController" id="JXi-PK-TxI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Pd-MW-i6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742.74809160305335" y="-27.464788732394368"/>
+        </scene>
+        <!--Normal Text VC-->
+        <scene sceneID="KRY-io-ZYQ">
+            <objects>
+                <viewController storyboardIdentifier="NormalTextVC" id="P9G-gz-kuq" customClass="NormalTextVC" customModule="ReadMoreLabel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Gz-U0-X7n">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayD-pv-5Fz">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHs-Ys-cYA">
+                                        <rect key="frame" x="20" y="50" width="353" height="111"/>
+                                        <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Read More been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</mutableString>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bHs-Ys-cYA" firstAttribute="centerX" secondItem="ayD-pv-5Fz" secondAttribute="centerX" id="1yM-PN-mOa"/>
+                                    <constraint firstAttribute="trailing" secondItem="bHs-Ys-cYA" secondAttribute="trailing" constant="20" id="JGL-19-MJy"/>
+                                    <constraint firstAttribute="bottom" secondItem="bHs-Ys-cYA" secondAttribute="bottom" constant="20" id="Wcx-C7-zpy"/>
+                                    <constraint firstItem="bHs-Ys-cYA" firstAttribute="top" secondItem="ayD-pv-5Fz" secondAttribute="top" constant="50" id="euB-WV-vRy"/>
+                                    <constraint firstItem="bHs-Ys-cYA" firstAttribute="leading" secondItem="ayD-pv-5Fz" secondAttribute="leading" constant="20" id="pDh-Ir-GRd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XUz-eG-iwm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ayD-pv-5Fz" firstAttribute="trailing" secondItem="XUz-eG-iwm" secondAttribute="trailing" id="1hZ-cW-e9G"/>
+                            <constraint firstItem="XUz-eG-iwm" firstAttribute="bottom" secondItem="ayD-pv-5Fz" secondAttribute="bottom" id="VsO-5J-oRJ"/>
+                            <constraint firstItem="ayD-pv-5Fz" firstAttribute="leading" secondItem="XUz-eG-iwm" secondAttribute="leading" id="Z3a-87-zeX"/>
+                            <constraint firstItem="ayD-pv-5Fz" firstAttribute="top" secondItem="XUz-eG-iwm" secondAttribute="top" id="chS-Gw-OOY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Normal Text VC" id="Pzg-GQ-jSX"/>
+                    <connections>
+                        <outlet property="lblReadMore" destination="bHs-Ys-cYA" id="5Wu-A5-luO"/>
+                        <outlet property="scrollview" destination="ayD-pv-5Fz" id="NOp-yH-TDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCw-rF-V9O" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2022" y="-27"/>
+        </scene>
+        <!--TableViewCellVC-->
+        <scene sceneID="W4j-q6-Jkj">
+            <objects>
+                <viewController id="4yd-x4-EXF" customClass="TblVwVC" customModule="ReadMoreLabel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q5b-eV-6iF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lH8-H4-lhv">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nxF-cJ-0d1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nxF-cJ-0d1" firstAttribute="bottom" secondItem="lH8-H4-lhv" secondAttribute="bottom" id="8Dj-pj-VDL"/>
+                            <constraint firstItem="lH8-H4-lhv" firstAttribute="top" secondItem="nxF-cJ-0d1" secondAttribute="top" id="NC9-Tf-vIL"/>
+                            <constraint firstItem="lH8-H4-lhv" firstAttribute="leading" secondItem="nxF-cJ-0d1" secondAttribute="leading" id="R2x-pl-Z3X"/>
+                            <constraint firstItem="nxF-cJ-0d1" firstAttribute="trailing" secondItem="lH8-H4-lhv" secondAttribute="trailing" id="mLf-Ac-6Jx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TableViewCellVC" id="jys-rL-Vla" customClass="TableViewCell"/>
+                    <connections>
+                        <outlet property="tableView" destination="lH8-H4-lhv" id="oME-Tn-EYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eR3-SD-Deu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2657" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
